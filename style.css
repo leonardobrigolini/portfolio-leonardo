@@ -184,14 +184,16 @@ section p {
 
 /* ── Cards ── */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
 .card {
   position: relative;
+  flex: 0 1 158px;
   background: var(--bg-card);
   border: 1px solid rgba(0, 212, 255, 0.15);
   border-radius: 10px;
@@ -387,7 +389,7 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .cards { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  .card { flex-basis: 130px; }
   section { padding: 3.5rem 1rem; }
 }
 
