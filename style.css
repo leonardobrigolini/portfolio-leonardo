@@ -385,13 +385,9 @@ footer {
   border-radius: 3px;
 }
 
-/* Card sozinho na última linha, centralizado na coluna do meio */
-.card-center { grid-column: 2; }
-
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .cards { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
-  .card-center { grid-column: auto; }
   section { padding: 3.5rem 1rem; }
 }
 
